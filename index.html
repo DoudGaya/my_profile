@@ -235,7 +235,7 @@
       <div class="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-6">
           <div class=" lg:w-2/3 ">
           <div class=" relative h-40 rounded-lg ">
-            <img src="./images/banner1.jpg" class=" object-cover absolute h-40 lg:h-64 w-full rounded-3xl" alt="">
+            <img src="./src/images/banner1.jpg" class=" object-cover absolute h-40 lg:h-64 w-full rounded-3xl" alt="">
             <div class=" absolute flex w-full h-full space-x-5 ">
               <div class="w-1/2 relative">
                 <div class=" absolute left-4 top-4">
@@ -273,16 +273,16 @@
           </div>
           <div class=" lg:w-1/3 w-full p-5 bg-white  rounded-3xl">
           <div class=" flex flex-col">
-            <img src="./images/banner2.jpg" alt="" class=" h-40 w-full rounded-3xl object-cover" srcset="">
+            <img src="./src/images/banner2.jpg" alt="" class=" h-40 w-full rounded-3xl object-cover" srcset="">
             <div class=" flex justify-between items-center">
               <div class=" flex flex-col">
                 <p class=" font-primary font-bold mt-2">Something Cool</p>
                 <small class=" py-1 text-sm font-profile text-gray-500">this is that small cool section</small>
               </div>
                 <div class="flex">
-                    <img src="./images/profile1.png" alt="" class="lg:h-12 lg:w-12 flex-none w-12 md:w-10 md:h-10 rounded-full -ml-6 shadow-lg" srcset="">
-                    <img src="./images/profile2.jpg" alt="" class=" lg:h-12 lg:w-12 flex-none w-12 md:w-10 md:h-10 rounded-full -ml-6 shadow-lg" srcset="">
-                    <img src="./images/profile3.jpeg" alt="" class=" lg:h-12 lg:w-12 flex-none w-12 md:w-10 md:h-10 rounded-full -ml-6 shadow-lg" srcset="">
+                    <img src="./src/images/profile1.png" alt="" class="lg:h-12 lg:w-12 flex-none w-12 md:w-10 md:h-10 rounded-full -ml-6 shadow-lg" srcset="">
+                    <img src="./src/images/profile2.jpg" alt="" class=" lg:h-12 lg:w-12 flex-none w-12 md:w-10 md:h-10 rounded-full -ml-6 shadow-lg" srcset="">
+                    <img src="./src/images/profile3.jpeg" alt="" class=" lg:h-12 lg:w-12 flex-none w-12 md:w-10 md:h-10 rounded-full -ml-6 shadow-lg" srcset="">
               </div>
             </div>
           </div>
@@ -307,7 +307,7 @@
 
         <!-- products image -->
         <div class=" my-3">
-          <img  src="./images/products/product1.jpg" class=" h-28 w-full object-contain" alt="">
+          <img  src="./src/images/products/product1.jpg" class=" h-28 w-full object-contain" alt="">
         </div>
         <!-- end of image -->
         <div class=" flex flex-col">
@@ -331,32 +331,7 @@
 
         <!-- products image -->
         <div class=" my-3">
-          <img  src="./images/products/product2.jpg" class=" h-28 w-full object-contain" alt="">
-        </div>
-        <!-- end of image -->
-        <div class=" flex flex-col">
-          <p class=" font-profile">Product Name</p>
-          <small class=" text-sm text-gray-500  font-profile "> $190.00</small>
-        </div>
-      </div>
-
-      <div class="flex  py-4 px-4 flex-col rounded-2xl bg-white relative" v-for="product in products" :key="product.id" >
-        <div class="absolute transform transition-all hover:scale-125  -bottom-4 -right-4 flex justify-center text-gray-500 dark:text-black h-12 w-12 bg-white border-gray-200 dark:border-gray-900 border-8 rounded-full">
-         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 self-center w-6 p-1" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
-          </svg>
-        </div>
-        <!-- the star rating -->
-        <div class="flex justify-end font-thin ">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 font-light text-gray-500  w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-            </svg>
-        </div>
-        <!-- end star rating -->
-
-        <!-- products image -->
-        <div class=" my-3">
-          <img  src="./images/products/product3.jpg" class=" h-28 w-full object-contain" alt="">
+          <img  src="./src/images/products/product2.jpg" class=" h-28 w-full object-contain" alt="">
         </div>
         <!-- end of image -->
         <div class=" flex flex-col">
@@ -381,7 +356,7 @@
 
         <!-- products image -->
         <div class=" my-3">
-          <img  src="./images/products/product4.jpg" class=" h-28 w-full object-contain" alt="">
+          <img  src="./src/images/products/product3.jpg" class=" h-28 w-full object-contain" alt="">
         </div>
         <!-- end of image -->
         <div class=" flex flex-col">
@@ -406,7 +381,7 @@
 
         <!-- products image -->
         <div class=" my-3">
-          <img  src="./images/products/product5.jpg" class=" h-28 w-full object-contain" alt="">
+          <img  src="./src/images/products/product4.jpg" class=" h-28 w-full object-contain" alt="">
         </div>
         <!-- end of image -->
         <div class=" flex flex-col">
@@ -431,7 +406,7 @@
 
         <!-- products image -->
         <div class=" my-3">
-          <img  src="./images/products/product1.jpg" class=" h-28 w-full object-contain" alt="">
+          <img  src="./src/images/products/product5.jpg" class=" h-28 w-full object-contain" alt="">
         </div>
         <!-- end of image -->
         <div class=" flex flex-col">
@@ -456,7 +431,7 @@
 
         <!-- products image -->
         <div class=" my-3">
-          <img  src="./images/products/product1.jpg" class=" h-28 w-full object-contain" alt="">
+          <img  src="./src/images/products/product1.jpg" class=" h-28 w-full object-contain" alt="">
         </div>
         <!-- end of image -->
         <div class=" flex flex-col">
@@ -481,7 +456,7 @@
 
         <!-- products image -->
         <div class=" my-3">
-          <img  src="./images/products/product1.jpg" class=" h-28 w-full object-contain" alt="">
+          <img  src="./src/images/products/product1.jpg" class=" h-28 w-full object-contain" alt="">
         </div>
         <!-- end of image -->
         <div class=" flex flex-col">
@@ -506,7 +481,32 @@
 
         <!-- products image -->
         <div class=" my-3">
-          <img  src="./images/products/product1.jpg" class=" h-28 w-full object-contain" alt="">
+          <img  src="./src/images/products/product1.jpg" class=" h-28 w-full object-contain" alt="">
+        </div>
+        <!-- end of image -->
+        <div class=" flex flex-col">
+          <p class=" font-profile">Product Name</p>
+          <small class=" text-sm text-gray-500  font-profile "> $190.00</small>
+        </div>
+      </div>
+
+      <div class="flex  py-4 px-4 flex-col rounded-2xl bg-white relative" v-for="product in products" :key="product.id" >
+        <div class="absolute transform transition-all hover:scale-125  -bottom-4 -right-4 flex justify-center text-gray-500 dark:text-black h-12 w-12 bg-white border-gray-200 dark:border-gray-900 border-8 rounded-full">
+         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 self-center w-6 p-1" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <!-- the star rating -->
+        <div class="flex justify-end font-thin ">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 font-light text-gray-500  w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+            </svg>
+        </div>
+        <!-- end star rating -->
+
+        <!-- products image -->
+        <div class=" my-3">
+          <img  src="./src/images/products/product1.jpg" class=" h-28 w-full object-contain" alt="">
         </div>
         <!-- end of image -->
         <div class=" flex flex-col">
