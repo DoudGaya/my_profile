@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'profile': ['Bebas Neue', 'cursive'],
-        'logo' : ['Sacramento']
+        'logo': ['Bebas Neue', ],
+        'primary': ['Genos', 'sans-serif'],
+        'profile': ['Varela Round', 'sans-serif']
       }
     },
   },

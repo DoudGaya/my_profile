@@ -4,19 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../dist/tailwind.css">
+    <link rel="stylesheet" href="./tailwind.css">
     <title>Shop - UI</title>
 </head>
-<body class="bg-gray-100 dark:bg-gray-900">
+<body class="bg-gray-200 dark:bg-gray-900">
 	<!--the navigations-->
 	<div class="">
         <!-- the header cart and logo -->
-        <div class="py-2 px-4 z-50 fixed dark:bg-gray-800 bg-gray-200 shadow-lg  w-full">
+        <div class="py-2 px-4 z-50 fixed sm:dark:bg-gray-800 dark:bg-transparent bg-gray-200 shadow-lg  w-full">
            <div class="flex justify-between px-4 py-2  shadow-xl md:shadow-none items-center rounded-lg top-0 bg-white md:bg-transparent w-full">
           <div class=" flex space-5 justify-center items-center ">
-             <!-- <img src="../assets/logo1.jpeg" alt="" class="h-10 rounded-lg"> -->
-             <img src="../assets/logo2.jpeg" alt="" class="h-10 rounded-lg">
-             <p class="mx-2 font-profile text-lg">Home</p>
+            <p class=" dark:text-black md:hidden text-2xl font-logo">LOGO</p>
+            <ul class="md:flex space-x-3 hidden dark:text-white">
+              <li class="font-profile">
+                <a href="/">
+                  Store
+                </a>
+              </li>
+              <li class="font-profile">
+                <a href="/landing">
+                  Landing
+                </a>
+              </li>
+              <li class="font-profile">
+                <a href="/blog">
+                  Blog
+                </a>
+              </li>
+            </ul>
           </div>
  
            <div class=" hidden  md:block text-2xl font-logo dark:text-gray-100 tracking-wider">
@@ -159,35 +174,35 @@
          
 
           <a href="#" class="bg-white hover:bg-black hover:text-white transform hover:-translate-y-1 ease-in-out transition-all text-gray-600 shadow-sm text-sm px-6 font-profile py-2 self-center rounded-2xl ">
-            <p> Category</p>
+            <p>Shoe</p>
           </a>
 
           <a href="#" class="bg-white hover:bg-black hover:text-white transform hover:-translate-y-1 ease-in-out transition-all text-gray-600 shadow-sm text-sm px-6 font-profile py-2 self-center rounded-2xl ">
-            <p> Category</p>
+            <p>Bikes</p>
           </a>
 
           <a href="#" class="bg-white hover:bg-black hover:text-white transform hover:-translate-y-1 ease-in-out transition-all text-gray-600 shadow-sm text-sm px-6 font-profile py-2 self-center rounded-2xl ">
-            <p> Category</p>
+            <p>Snickers</p>
           </a>
 
           <a href="#" class="bg-white hover:bg-black hover:text-white transform hover:-translate-y-1 ease-in-out transition-all text-gray-600 shadow-sm text-sm px-6 font-profile py-2 self-center rounded-2xl ">
-            <p> Category</p>
+            <p>Androids</p>
           </a>
 
           <a href="#" class="bg-white hover:bg-black hover:text-white transform hover:-translate-y-1 ease-in-out transition-all text-gray-600 shadow-sm text-sm px-6 font-profile py-2 self-center rounded-2xl ">
-            <p> Category</p>
+            <p>Glasses</p>
           </a>
 
           <a href="#" class="bg-white hover:bg-black hover:text-white transform hover:-translate-y-1 ease-in-out transition-all text-gray-600 shadow-sm text-sm px-6 font-profile py-2 self-center rounded-2xl ">
-            <p> Category</p>
+            <p>Pants</p>
           </a>
 
           <a href="#" class="bg-white hover:bg-black hover:text-white transform hover:-translate-y-1 ease-in-out transition-all text-gray-600 shadow-sm text-sm px-6 font-profile py-2 self-center rounded-2xl ">
-            <p> Category</p>
+            <p>Laptops</p>
           </a>
 
           <a href="#" class="bg-white hover:bg-black hover:text-white transform hover:-translate-y-1 ease-in-out transition-all text-gray-600 shadow-sm text-sm px-6 font-profile py-2 self-center rounded-2xl ">
-            <p> Category</p>
+            <p>Mobile</p>
           </a>
       </div>
      <!-- svg dots -->
@@ -218,13 +233,13 @@
             <ul class=" space-y-5 dark:text-gray-200 text-gray-700 mt-2">
              
                   <li v-for="navmenu in navMenus" :key="navmenu" >
-                     <a href="#">Something</a>
+                     <a href="#">Men</a>
                   </li>
                   <li v-for="navmenu in navMenus" :key="navmenu" >
-                    <a href="#">Something</a>
+                    <a href="#">Women</a>
                  </li>
                  <li v-for="navmenu in navMenus" :key="navmenu" >
-                  <a href="#">Something</a>
+                  <a href="#">Children</a>
                </li>
                   
             </ul>
@@ -239,7 +254,7 @@
             <div class=" absolute flex w-full h-full space-x-5 ">
               <div class="w-1/2 relative">
                 <div class=" absolute left-4 top-4">
-                  <h1 class="text-2xl font-logo font-bold">Chemcider Medicines. <br class="hidden lg:inline-block">Get tested</h1>
+                  <h1 class="text-2xl font-logo font-bold">Sample Stroe with Tailwind. <br class="hidden lg:inline-block">Get Get Started</h1>
                   <div class=" lg:mt-12 -mt-6 absolute lg:w-full">
                     <div class=" w-full relative hidden my-10 px-6 bg-gray-200 dark:bg-gray-900 -ml-16 lg:flex space-x-2 ">
                       <button class=" font-profile  bg-transparent  px-5 py-2 ml-3 flex-none text-gray-400">
@@ -292,11 +307,11 @@
 
     <div class="grid  grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4  md:gap-6  lg:gap-10 mt-6">
       <div class="flex  py-4 px-4 flex-col rounded-2xl bg-white relative" v-for="product in products" :key="product.id" >
-        <div class="absolute transform transition-all hover:scale-125  -bottom-4 -right-4 flex justify-center text-gray-500 dark:text-black h-12 w-12 bg-white border-gray-200 dark:border-gray-900 border-8 rounded-full">
+        <button class="absolute transform transition-all hover:scale-125  -bottom-4 -right-4 flex justify-center text-gray-500 dark:text-black h-12 w-12 bg-white border-gray-200 dark:border-gray-900 border-8 rounded-full">
          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 self-center w-6 p-1" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
           </svg>
-        </div>
+        </button>
         <!-- the star rating -->
         <div class="flex justify-end font-thin ">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 font-light text-gray-500  w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -316,11 +331,11 @@
         </div>
       </div>
       <div class="flex  py-4 px-4 flex-col rounded-2xl bg-white relative" v-for="product in products" :key="product.id" >
-        <div class="absolute transform transition-all hover:scale-125  -bottom-4 -right-4 flex justify-center text-gray-500 dark:text-black h-12 w-12 bg-white border-gray-200 dark:border-gray-900 border-8 rounded-full">
+        <button class="absolute transform transition-all hover:scale-125  -bottom-4 -right-4 flex justify-center text-gray-500 dark:text-black h-12 w-12 bg-white border-gray-200 dark:border-gray-900 border-8 rounded-full">
          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 self-center w-6 p-1" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
           </svg>
-        </div>
+        </button>
         <!-- the star rating -->
         <div class="flex justify-end font-thin ">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 font-light text-gray-500  w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -341,11 +356,11 @@
       </div>
 
       <div class="flex  py-4 px-4 flex-col rounded-2xl bg-white relative" v-for="product in products" :key="product.id" >
-        <div class="absolute transform transition-all hover:scale-125  -bottom-4 -right-4 flex justify-center text-gray-500 dark:text-black h-12 w-12 bg-white border-gray-200 dark:border-gray-900 border-8 rounded-full">
+        <button class="absolute transform transition-all hover:scale-125  -bottom-4 -right-4 flex justify-center text-gray-500 dark:text-black h-12 w-12 bg-white border-gray-200 dark:border-gray-900 border-8 rounded-full">
          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 self-center w-6 p-1" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
           </svg>
-        </div>
+        </button>
         <!-- the star rating -->
         <div class="flex justify-end font-thin ">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 font-light text-gray-500  w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -366,11 +381,11 @@
       </div>
 
       <div class="flex  py-4 px-4 flex-col rounded-2xl bg-white relative" v-for="product in products" :key="product.id" >
-        <div class="absolute transform transition-all hover:scale-125  -bottom-4 -right-4 flex justify-center text-gray-500 dark:text-black h-12 w-12 bg-white border-gray-200 dark:border-gray-900 border-8 rounded-full">
+        <button class="absolute transform transition-all hover:scale-125  -bottom-4 -right-4 flex justify-center text-gray-500 dark:text-black h-12 w-12 bg-white border-gray-200 dark:border-gray-900 border-8 rounded-full">
          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 self-center w-6 p-1" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
           </svg>
-        </div>
+        </button>
         <!-- the star rating -->
         <div class="flex justify-end font-thin ">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 font-light text-gray-500  w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -391,11 +406,11 @@
       </div>
 
       <div class="flex  py-4 px-4 flex-col rounded-2xl bg-white relative" v-for="product in products" :key="product.id" >
-        <div class="absolute transform transition-all hover:scale-125  -bottom-4 -right-4 flex justify-center text-gray-500 dark:text-black h-12 w-12 bg-white border-gray-200 dark:border-gray-900 border-8 rounded-full">
+        <button class="absolute transform transition-all hover:scale-125  -bottom-4 -right-4 flex justify-center text-gray-500 dark:text-black h-12 w-12 bg-white border-gray-200 dark:border-gray-900 border-8 rounded-full">
          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 self-center w-6 p-1" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
           </svg>
-        </div>
+        </button>
         <!-- the star rating -->
         <div class="flex justify-end font-thin ">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 font-light text-gray-500  w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -416,11 +431,11 @@
       </div>
 
       <div class="flex  py-4 px-4 flex-col rounded-2xl bg-white relative" v-for="product in products" :key="product.id" >
-        <div class="absolute transform transition-all hover:scale-125  -bottom-4 -right-4 flex justify-center text-gray-500 dark:text-black h-12 w-12 bg-white border-gray-200 dark:border-gray-900 border-8 rounded-full">
+        <button class="absolute transform transition-all hover:scale-125  -bottom-4 -right-4 flex justify-center text-gray-500 dark:text-black h-12 w-12 bg-white border-gray-200 dark:border-gray-900 border-8 rounded-full">
          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 self-center w-6 p-1" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
           </svg>
-        </div>
+        </button>
         <!-- the star rating -->
         <div class="flex justify-end font-thin ">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 font-light text-gray-500  w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -441,11 +456,11 @@
       </div>
 
       <div class="flex  py-4 px-4 flex-col rounded-2xl bg-white relative" v-for="product in products" :key="product.id" >
-        <div class="absolute transform transition-all hover:scale-125  -bottom-4 -right-4 flex justify-center text-gray-500 dark:text-black h-12 w-12 bg-white border-gray-200 dark:border-gray-900 border-8 rounded-full">
+        <button class="absolute transform transition-all hover:scale-125  -bottom-4 -right-4 flex justify-center text-gray-500 dark:text-black h-12 w-12 bg-white border-gray-200 dark:border-gray-900 border-8 rounded-full">
          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 self-center w-6 p-1" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
           </svg>
-        </div>
+        </button>
         <!-- the star rating -->
         <div class="flex justify-end font-thin ">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 font-light text-gray-500  w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -466,11 +481,11 @@
       </div>
 
       <div class="flex  py-4 px-4 flex-col rounded-2xl bg-white relative" v-for="product in products" :key="product.id" >
-        <div class="absolute transform transition-all hover:scale-125  -bottom-4 -right-4 flex justify-center text-gray-500 dark:text-black h-12 w-12 bg-white border-gray-200 dark:border-gray-900 border-8 rounded-full">
+        <button class="absolute transform transition-all hover:scale-125  -bottom-4 -right-4 flex justify-center text-gray-500 dark:text-black h-12 w-12 bg-white border-gray-200 dark:border-gray-900 border-8 rounded-full">
          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 self-center w-6 p-1" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
           </svg>
-        </div>
+        </button>
         <!-- the star rating -->
         <div class="flex justify-end font-thin ">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 font-light text-gray-500  w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -491,11 +506,11 @@
       </div>
 
       <div class="flex  py-4 px-4 flex-col rounded-2xl bg-white relative" v-for="product in products" :key="product.id" >
-        <div class="absolute transform transition-all hover:scale-125  -bottom-4 -right-4 flex justify-center text-gray-500 dark:text-black h-12 w-12 bg-white border-gray-200 dark:border-gray-900 border-8 rounded-full">
+        <button class="absolute transform transition-all hover:scale-125  -bottom-4 -right-4 flex justify-center text-gray-500 dark:text-black h-12 w-12 bg-white border-gray-200 dark:border-gray-900 border-8 rounded-full">
          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 self-center w-6 p-1" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
           </svg>
-        </div>
+        </button>
         <!-- the star rating -->
         <div class="flex justify-end font-thin ">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 font-light text-gray-500  w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
