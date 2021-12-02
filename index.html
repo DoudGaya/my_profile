@@ -5,159 +5,172 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./tailwind.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Shop - UI</title>
 </head>
 <body class="bg-gray-200 dark:bg-gray-900">
 	<!--the navigations-->
-	<div class="">
-        <!-- the header cart and logo -->
-        <div class="py-2 px-4 z-50 fixed sm:dark:bg-gray-800 dark:bg-transparent bg-gray-200 shadow-lg  w-full">
-           <div class="flex justify-between px-4 py-2  shadow-xl md:shadow-none items-center rounded-lg top-0 bg-white md:bg-transparent w-full">
-          <div class=" flex space-5 justify-center items-center ">
-            <p class=" dark:text-black md:hidden text-2xl font-logo">LOGO</p>
-            <ul class="md:flex space-x-3 hidden dark:text-white">
-              <li class="font-profile">
-                <a href="/">
-                  Store
+	<div x-data="{ mobile: false}" class="">
+              <!-- the header cart and logo -->
+              <div class="py-2 px-4 z-50 fixed sm:dark:bg-gray-800 dark:bg-transparent bg-gray-200 shadow-lg  w-full">
+                <div class="flex justify-between px-4 py-2  shadow-xl md:shadow-none items-center rounded-lg top-0 bg-white md:bg-transparent w-full">
+                <div class=" flex space-5 justify-center items-center ">
+                  <p class=" dark:text-black md:hidden text-2xl font-logo">LOGO</p>
+                  <ul class="md:flex space-x-3 hidden dark:text-white">
+                    <li class="font-profile">
+                      <a href="/">
+                        Store
+                      </a>
+                    </li>
+                    <li class="font-profile">
+                      <a href="/landing">
+                        Landing
+                      </a>
+                    </li>
+                    <li class="font-profile">
+                      <a href="/blog">
+                        Blog
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+      
+                <div class=" hidden  md:block text-2xl font-logo dark:text-gray-100 tracking-wider">
+                  Logo
+                </div>
+
+              <div class="flex items-center space-x-3">
+                
+
+                  <!-- cart start -->
+                <a href="#">
+                  <div class="p-2 bg-gray-100 rounded-xl relative">
+                      <div class="bg-gray-900 flex text-white justify-center absolute w-5 h-5 p-2 -top-1 -right-0 rounded-lg">
+                          <p class="self-center text-xs">4</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 md:h-6 md:w-6 w-10" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" />
+                      </svg>
+                  </div>
                 </a>
-              </li>
-              <li class="font-profile">
-                <a href="/landing">
-                  Landing
-                </a>
-              </li>
-              <li class="font-profile">
-                <a href="/blog">
-                  Blog
-                </a>
-              </li>
+                  <!-- end cart -->
+                
+                <!-- the menu -->
+              <button @click=" mobile = !mobile " class="bg-gray-100 active:bg-transparent active:bg-gray-400 md:hidden  rounded-xl">
+                      <div class=" p-2 relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 md:h-6 md:w-6 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+                    </svg>
+                    </div>
+              </button>
+                <!-- end of menu -->
+
+            
+              </div>
+
+
+            </div>
+              </div>
+            <!-- end of header and logo -->
+
+          <div class="h-24 w-full"></div>
+            <!-- mobile nav -->
+        <div x-show="mobile" @click.away="mobile = false" class=" inset-x-2 absolute flex lg:hidden ">
+              <div  class="duration-500 bg-gray-300 dark:bg-gray-800  min-w-max w-full py-4  flex-col object-center mx-2 my-2 rounded-lg z-50" >
+          <div class="grid grid-cols-3 gap-3 justify-items-center py-6">
+            <!-- grid items -->
+            <router-link class=" rounded-md active:bg-gray-500 " to="/" >
+                  <div class=" h-14 w-14 dark:text-white  rounded-md items-center flex flex-col justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6  w-6" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                  </svg>
+                  <small class="text-sm">Home</small>
+                </div>
+            </router-link>
+            
+            <!-- end grid items -->
+
+              <!-- grid items -->
+              <router-link class=" rounded-md active:bg-gray-500 " to="#" >
+            <div class=" h-14 w-14 dark:text-white rounded-md items-center flex flex-col justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+              </svg>
+              <small class="text-sm">Notifications</small>
+            </div>
+              </router-link>
+            <!-- end grid items -->
+
+              <!-- grid items -->
+              <router-link class=" rounded-md active:bg-gray-500 " to="#" >
+            <div class=" h-14 w-14 dark:text-white rounded-md items-center flex flex-col justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+              </svg>
+              <small class="text-sm">Liked</small>
+            </div>
+              </router-link>
+            <!-- end grid items -->
+
+              <!-- grid items -->
+              <router-link class=" rounded-md active:bg-gray-500" to="/cart" >
+            <div class=" h-14 w-14 dark:text-white rounded-md items-center flex flex-col justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                </svg>
+              <small class="text-sm">Cart</small>
+            </div>
+              </router-link>
+            <!-- end grid items -->
+
+              <!-- grid items -->
+              <router-link class=" rounded-md active:bg-gray-500 " to="#" >
+            <div class=" h-14 w-14 dark:text-white rounded-md items-center flex flex-col justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clip-rule="evenodd" />
+              </svg>
+              <small class="text-sm">Message</small>
+            </div>
+              </router-link>
+            <!-- end grid items -->
+
+              <!-- grid items -->
+              <router-link class=" rounded-md active:bg-gray-500" to="/profile/id" >
+            <div class=" h-14 w-14 dark:text-white rounded-md items-center flex flex-col justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                </svg>
+              <small class="text-sm">Profile</small>
+            </div>
+              </router-link>
+            <!-- end grid items -->
+            
+          </div>
+
+          
+          <div class="py-3 flex justify-between px-5">
+            <div class="space-x-2 rounded-md w-full flex items-center bg-white px-2">
+              <input type="text" placeholder="Search Everything" class=" py-2 focus:outline-none w-full ">
+              <button class="text-gray-900">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="py-3 flex justify-between px-10 dark:text-white">
+            <div class="">LOGO</div>
+          <div class="">
+            <ul class="flex justify-between top-0 bottom-0  dark:text-white ">
+                <router-link class="border-r-2 px-2" to="/" >Home</router-link>
+                <router-link class="border-r-2 px-2" to="/about">About</router-link>
+                <router-link class=" px-2" to="/user-profile/">profile</router-link>
             </ul>
           </div>
- 
-           <div class=" hidden  md:block text-2xl font-logo dark:text-gray-100 tracking-wider">
-            Logo
-          </div>
-
-         <div class="flex items-center space-x-3">
-          
-
-            <!-- cart start -->
-          <a href="#">
-             <div class="p-2 bg-gray-100 rounded-xl relative">
-                <div class="bg-gray-900 flex text-white justify-center absolute w-5 h-5 p-2 -top-1 -right-0 rounded-lg">
-                    <p class="self-center text-xs">4</p>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 md:h-6 md:w-6 w-10" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" />
-                </svg>
-            </div>
-          </a>
-            <!-- end cart -->
-          
-          <!-- the menu -->
-         <button  class="bg-gray-100 active:bg-transparent active:bg-gray-400 md:hidden  rounded-xl">
-                <div class=" p-2 relative">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 md:h-6 md:w-6 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
-              </svg>
-              </div>
-         </button>
-          <!-- end of menu -->
-
-      
-         </div>
-
-
-      </div>
         </div>
-      <!-- end of header and logo -->
-
-    <div class="h-24 w-full"></div>
-      <!-- mobile nav -->
-   <div class=" flex relative ">
-        <div  class=" hidden duration-500 bg-gray-300 min-w-max w-full  flex-col object-center mx-2 my-2 rounded-lg z-50" >
-     <div class="grid grid-cols-3 gap-3 justify-items-center py-6">
-      <!-- grid items -->
-       <router-link class=" rounded-md active:bg-gray-500 " to="/" >
-            <div class=" h-14 w-14  rounded-md items-center flex flex-col justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-              <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
-            </svg>
-            <small class="text-sm">Home</small>
-          </div>
-       </router-link>
-      
-       <!-- end grid items -->
-
-        <!-- grid items -->
-         <router-link class=" rounded-md active:bg-gray-500 " to="#" >
-       <div class=" h-14 w-14  rounded-md items-center flex flex-col justify-center">
-         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-          <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
-        </svg>
-        <small class="text-sm">Notifications</small>
-       </div>
-         </router-link>
-       <!-- end grid items -->
-
-        <!-- grid items -->
-         <router-link class=" rounded-md active:bg-gray-500 " to="#" >
-       <div class=" h-14 w-14  rounded-md items-center flex flex-col justify-center">
-         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
-        </svg>
-        <small class="text-sm">Liked</small>
-       </div>
-         </router-link>
-       <!-- end grid items -->
-
-        <!-- grid items -->
-        <router-link class=" rounded-md active:bg-gray-500" to="/cart" >
-       <div class=" h-14 w-14  rounded-md items-center flex flex-col justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-            <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
-          </svg>
-        <small class="text-sm">Cart</small>
-       </div>
-        </router-link>
-       <!-- end grid items -->
-
-        <!-- grid items -->
-         <router-link class=" rounded-md active:bg-gray-500 " to="#" >
-       <div class=" h-14 w-14  rounded-md items-center flex flex-col justify-center">
-         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clip-rule="evenodd" />
-        </svg>
-        <small class="text-sm">Message</small>
-       </div>
-         </router-link>
-       <!-- end grid items -->
-
-        <!-- grid items -->
-        <router-link class=" rounded-md active:bg-gray-500" to="/profile/id" >
-       <div class=" h-14 w-14  rounded-md items-center flex flex-col justify-center">
-         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
-          </svg>
-        <small class="text-sm">Profile</small>
-       </div>
-        </router-link>
-       <!-- end grid items -->
-      
-     </div>
-
-        <div class="py-3 flex justify-between px-10">
-      <div class="">{{ title }}</div>
-      <div class="">
-        <ul class="flex justify-between top-0 bottom-0 ">
-            <router-link class="border-r-2 px-2" to="/" >Home</router-link>
-            <router-link class="border-r-2 px-2" to="/about">About</router-link>
-            <router-link class=" px-2" to="/user-profile/">profile</router-link>
-        </ul>
-      </div>
-    </div>
-      </div>
-   </div>
+            </div>
+        </div>
   </div>
 
 	<!--end of navigation section-->
@@ -167,7 +180,7 @@
     <!-- category and search bar made categories section -->
     <div class=" w-full px-10 hidden xl:flex items-center">
       <!-- category -->
-      <div  class=" space-x-6 w-5/6 xl:flex ">
+      <div  class=" space-x-6 w-5/6 xl:flex  ">
           <a href="#" class="bg-black text-sm shadow-sm px-7 self-center font-profile  text-white py-2 rounded-2xl ">
             shoes 
           </a>
