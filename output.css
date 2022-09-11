@@ -703,6 +703,12 @@ video {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
 .rounded-full{
   border-radius: 9999px;
 }
@@ -890,8 +896,21 @@ video {
   padding-right: 1rem;
 }
 
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .font-profile{
   font-family: Varela Round, sans-serif;
+}
+
+.font-logo{
+  font-family: Bebas Neue;
+}
+
+.font-primary{
+  font-family: Genos, sans-serif;
 }
 
 .text-2xl{
