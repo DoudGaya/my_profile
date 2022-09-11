@@ -1,17 +1,17 @@
+/** @type {import('tailwindcss').Config} */
+
+
 module.exports = {
-  purge: [],
-  darkMode: 'media', // or 'media' or 'class'
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
       fontFamily: {
         'logo': ['Bebas Neue', ],
         'primary': ['Genos', 'sans-serif'],
         'profile': ['Varela Round', 'sans-serif']
-      }
+      },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 }
+

@@ -1,6 +1,10 @@
-# tailwind-ui-designs
-On this Repo I will be creating different tailwindCSS designs for different use. Just the HTML and CSS, maybe a little bit JavaScript  to make it responsive. i use alphine.js for the javascript to speed up the development process.
+# Tailwind UI Desgins
 
-this is my github pages link to view what the design looks like
-https://doudgaya.github.io/tailwind-ui-designs/
+This repository contains different markups with tailwindCSS and AlpineJS. 
 
+## TailwindCSS
+
+Tailwind CSS is an open source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables
+
+## AlpineJS
+Alpine is a rugged, minimal tool for composing behavior directly in your markup. Think of it like jQuery for the modern web. Plop in a script tag and get going.
