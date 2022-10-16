@@ -7,100 +7,108 @@
     <link rel="stylesheet" href="../output.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <title>Shop - UI</title>
+    <title>Shop</title>
 </head>
-<body class="bg-gray-600 dark:bg-gray-900">
-  <div class="flex w-[900px] h-screen  mx-auto ">
-    <div class=" flex flex-col space-y-4 h-max my-auto">
+<body class="bg-gray-200 flex justify-center ">
+  <div class="flex lg:w-[1400px] space-x-10 py-10 h-screen px-10">
+
+    <div class=" w-1/4 rounded-md bg-white flex flex-col ">
+      <div class=" w-full bg-gradient-to-br from-sky-800 to-sky-500 h-40 flex flex-col rounded-t-lg"></div>
+     
+      <div class="flex px-6 ">
+        <div class="-mt-28 h-32 w-32 overflow-hidden bg-gradient-to-b flex  ">
+          <img src="./images/me.png" class=" object-cover w-full h-full  rounded-xl " alt="">
+        </div>
+      </div>
+
+      <div class=" mt-2 flex py-2 space-y-1 flex-col px-6">
+        <p class=" text-gray-800 text-lg">Frontend Engineer</p>
+        <p class=" text-xl font-profile font-bold">Abdulrahman Dauda Gaya</p>
+
+        <div class="flex border-y my-2 py-3 space-x-4">
+          <a href="https://web.facebook.com/abdulrahman.dauda1/" class=" bg-gradient-to-b from-cyan-600 drop-shadow-md to-cyan-500   text-white  h-10 p-2 rounded-lg ">
+            <i class='bx bxl-facebook text-2xl text-white hover:text-gray-300 duration-150'></i>
+          </a>
+
+          <a href="https://github.com/DoudGaya" class=" bg-gradient-to-b from-cyan-600 drop-shadow-md to-cyan-500   text-white  h-10 flex-none p-2 rounded-lg ">
+            <i class='bx bxl-github text-2xl text-white hover:text-gray-300 duration-150' ></i>
+          </a>
+
+          <a href="https://web.facebook.com/abdulrahman.dauda1/" class=" bg-gradient-to-b from-cyan-600 drop-shadow-md to-cyan-500   text-white  h-10 flex-none p-2 rounded-lg ">
+            <i class='bx bxl-twitter text-2xl text-white hover:text-gray-300 duration-150' ></i>
+          </a>
+
+          <a href="https://web.facebook.com/abdulrahman.dauda1/" class=" bg-gradient-to-b from-cyan-600 drop-shadow-md to-cyan-500   text-white  h-10 flex-none p-2 rounded-lg ">
+            <i class='bx bxl-instagram text-2xl text-white hover:text-gray-300 duration-150' ></i>
+          </a>
+
+          <a href="https://web.facebook.com/abdulrahman.dauda1/" class=" bg-gradient-to-b from-cyan-600 drop-shadow-md to-cyan-500   text-white  h-10 flex-none p-2 rounded-lg ">
+            <i class='bx bxl-linkedin text-2xl text-white hover:text-gray-300 duration-150' ></i>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class=" flex flex-col space-y-4  h-max w-full ">
 
       <!-- FIRST CARD -->
-      <div class=" bg-zinc-900 text-gray-300 px-4 py-6 rounded-lg">
-        <h1 class=" text-2xl font-primary">Welcome to my PORTFOLIO, Hope you love the simplicity of it... 💕</h1>
-      </div>
+
       <!-- END FIRST CARD -->
 
       <!-- MAIN -->
-      <div class=" bg-zinc-900  rounded-lg py-10 px-10 flex w-full space-x-4 ">
-        <div class=" grid grid-cols-4 p-3 gap-3 bg-gradient-to-br from-emerald-500 to bg-emerald-400  rounded-md">
+      <div class=" bg-white rounded-lg py-10 px-10 flex flex-col  space-y-4 w-full ">
+        <div class=" text-2xl">Languages and Technologies </div>
+        <div class=" flex flex-col space-y-10 md:space-y-10 md:flex-row  space-x-4 w-full">
+          
+        <div class=" grid grid-cols-4 p-3 gap-3 bg-gradient-to-br from-600-800 to bg-sky-500 peer-hover:bg-green-500 transform rounded-md">
           <div class="">
-            <a href="" class=" flex justify-center transform hover:scale-125 hover:bg-black duration-200 ease-in-out  items-center p-4 rounded-md shadow-md bg-gray-700">
-              <i class='bx bxl-javascript text-4xl text-white' ></i>
+            <a href="" class=" flex justify-center hover:bg-black duration-200 ease-in-out transform hover:scale-125 group  items-center p-4 rounded-md shadow-md bg-gray-700">
+              <i class='bx bxl-javascript text-4xl text-white group-hover:text-yellow-400 group-hover:stroke-white ' ></i>
             </a>
             </div>
           <div class="">
-            <a href="" class=" flex justify-center transform hover:scale-125 hover:bg-black duration-200 ease-in-out  items-center p-4 rounded-md shadow-md bg-gray-700">
-              <i class='bx bxl-react text-4xl text-white' ></i>
+            <a href="" class=" flex justify-center hover:bg-black duration-200 ease-in-out transform hover:scale-125 group  items-center p-4 rounded-md shadow-md bg-gray-700">
+              <i class='bx bxl-react text-4xl text-white peer-hover:bg-sky-800 group-hover:text-sky-500 group-hover:stroke-2 ' ></i>
           </a>
           </div>
           <div class="">
-            <a href="" class=" flex justify-center transform hover:scale-125 hover:bg-black duration-200 ease-in-out  items-center p-4 rounded-md shadow-md bg-gray-700">
-              <i class='bx bxl-vuejs text-4xl text-white' ></i>
+            <a href="" class=" flex justify-center hover:bg-black duration-200 ease-in-out transform hover:scale-125 group  items-center p-4 rounded-md shadow-md bg-gray-700">
+              <i class='bx bxl-vuejs text-4xl text-white group-hover:text-green-500 peer ' ></i>
             </a>
           </div>
           <div class="">
-            <a href="" class=" flex justify-center transform hover:scale-125 hover:bg-black duration-200 ease-in-out  items-center p-4 rounded-md shadow-md bg-gray-700">
-              <i class='bx bxl-tailwind-css text-4xl text-white' ></i>
+            <a href="" class=" flex justify-center hover:bg-black duration-200 ease-in-out transform hover:scale-125 group  items-center p-4 rounded-md shadow-md bg-gray-700">
+              <i class='bx bxl-tailwind-css text-4xl text-white group-hover:text-sky-500 ' ></i>
             </a>
           </div>
   
             <div class="">
-              <a href="" class=" flex justify-center transform hover:scale-125 hover:bg-black duration-200 ease-in-out  items-center p-4 rounded-md shadow-md bg-gray-700">
-                <i class='bx bxl-python text-4xl text-white' ></i>
+              <a href="" class=" flex justify-center hover:bg-black duration-200 ease-in-out transform hover:scale-125 group  items-center p-4 rounded-md shadow-md bg-gray-700">
+                <i class='bx bxl-python text-4xl text-white group-hover:text-yellow-400 ' ></i>
               </a>
             </div>
   
             <div class="">
-              <a href="" class=" flex justify-center transform hover:scale-125 hover:bg-black duration-200 ease-in-out  items-center p-4 rounded-md shadow-md bg-gray-700">
-                <i class='bx bxl-php text-4xl text-white' ></i>
+              <a href="" class=" flex justify-center hover:bg-black duration-200 ease-in-out transform hover:scale-125 group  items-center p-4 rounded-md shadow-md bg-gray-700">
+                <i class='bx bxl-php text-4xl text-white group-hover:text-purple-700 ' ></i>
+              </a>
+            </div>
+
+
+            <div class="">
+              <a href="" class=" flex justify-center hover:bg-black duration-200 ease-in-out transform hover:scale-125 group  items-center p-4 rounded-md shadow-md bg-gray-700">
+                <i class='bx bxl-nodejs text-4xl text-white group-hover:text-green-500 ' ></i>
               </a>
             </div>
         </div>
-        <div class=" flex flex-col space-y-2 text-gray-300 ">
-          
-          <div class="flex items-center space-x-4">
-            <img src="./images/profile2.jpg" alt="" class=" h-20 rounded-full w-20" srcset="">
-              <div class="">
-                <h1 class="text-2xl font-bold font-profile">Dauda Abdulrahman Gaya</h1>
-                <p class="text-xl">Full Stack Engineer </p>
-              </div>
-  
-          </div>
-          <div class="flex border-t py-4 px-4 space-x-6">
-            <a href="https://web.facebook.com/abdulrahman.dauda1/" class=" bg-gradient-to-b from-emerald-500 drop-shadow-md to-emerald-650  transform rotate-45 text-white  h-10 p-2 rounded-lg ">
-              <i class='bx bxl-facebook text-2xl text-white hover:text-emerald-300 duration-150 transform -rotate-45'></i>
-            </a>
-  
-            <a href="https://github.com/DoudGaya" class=" bg-gradient-to-b from-emerald-500 drop-shadow-md to-emerald-650  transform rotate-45 text-white  h-10 flex-none p-2 rounded-lg ">
-              <i class='bx bxl-github text-2xl text-white hover:text-emerald-300 duration-150 transform -rotate-45' ></i>
-            </a>
-  
-            <a href="https://web.facebook.com/abdulrahman.dauda1/" class=" bg-gradient-to-b from-emerald-500 drop-shadow-md to-emerald-650  transform rotate-45 text-white  h-10 flex-none p-2 rounded-lg ">
-              <i class='bx bxl-twitter text-2xl text-white hover:text-emerald-300 duration-150 transform -rotate-45' ></i>
-            </a>
-  
-            <a href="https://web.facebook.com/abdulrahman.dauda1/" class=" bg-gradient-to-b from-emerald-500 drop-shadow-md to-emerald-650  transform rotate-45 text-white  h-10 flex-none p-2 rounded-lg ">
-              <i class='bx bxl-instagram text-2xl text-white hover:text-emerald-300 duration-150 transform -rotate-45' ></i>
-            </a>
-  
-            <a href="https://web.facebook.com/abdulrahman.dauda1/" class=" bg-gradient-to-b from-emerald-500 drop-shadow-md to-emerald-650  transform rotate-45 text-white  h-10 flex-none p-2 rounded-lg ">
-              <i class='bx bxl-linkedin text-2xl text-white hover:text-emerald-300 duration-150 transform -rotate-45' ></i>
-            </a>
-            
-          </div>
+
+        <div class="flex bg-yellow-50 flex-col space-y-2"> 
+          Hello world, 
+        </div>
         </div>
       </div>
       <!-- END MAIN -->
-
-      <!-- MUSIC  -->
-      <div class=" bg-zinc-900 text-white py-6 px-10 rounded-lg ">
-        <div class=" flex flex-col">
-          <div class="">
-            <p class=" text-xl"><span class=" text-gray-400">Contact me:</span> <span class=" px-4 tracking-wider text-base font-profile">doud@chemcider.com | (+234) 8062249834</span></p>
-          </div>
-         
-        </div>
-      </div>
-      <!-- END MUSIC  -->
     </div>
   </div>
 </body>
